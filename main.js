@@ -330,7 +330,7 @@ function webcolor()
 {
 document.body.style.color ="skyblue";
 document.body.style.background = "gray";
-document.body.style.fontSize = 250 + '%';
+document.body.style.fontSize = 200 + '%';
 }
 
 
