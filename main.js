@@ -34,16 +34,24 @@ var ela = "防衛：エラ(地味に強いオペ)";
 var zofia = "攻撃：ゾフィア(ASHの強化版)";
 var dokkaebi = "攻撃：ドッケビ(スマホ依存症かな？)";
 var vigil = "防衛：ヴィジル(恥ずかしがりや)";
+var sinpei = "攻撃・防衛：新兵（神オペ）";
+var jogai1 = "一番上の人";
+var jogai2 = "上から二番目の人";
+var jogai3 = "上から三番目の人";
+var jogai4 = "上から四番目の人";
+var jogai5 = "最後の人";
+var syoumei = 0;
 
-var str = "UNICODE文字列をシフトJISへ";
-var sjis = UnescapeUnicode(EscapeSJIS(str));
-var str2 = UnescapeSJIS(EscapeUnicode(sjis));
-if (str==str2){alert("true");} //=> true
 
 
 webcolor();
 random();
 
+
+var str = "UNICODE文字列をシフトJISへ";
+var sjis = UnescapeUnicode(EscapeSJIS(str));
+var str2 = UnescapeSJIS(EscapeUnicode(sjis));
+if (str==str2){alert("true");} //=> true
 
 
 function random()
@@ -62,7 +70,7 @@ put("(!!新シーズン対応!!)");
 function kougeki()
 {
 document.body.style.color = ("red");
-var random = Math.ceil( Math.random()*18);
+var random = Math.ceil( Math.random()*19);
 
 if(random == 1)
 {
@@ -154,6 +162,11 @@ put(ying);
 
 put(twitch);
 
+}else if (random == 19)
+{
+
+put(sinpei);
+
 }
 
 
@@ -161,7 +174,7 @@ put(twitch);
 function bouei()
 {
 document.body.style.color = ("green");
-var random1 = Math.ceil( Math.random()*18);
+var random1 = Math.ceil( Math.random()*19);
 
 if(random1 == 1)
 {
@@ -253,6 +266,11 @@ put(lesion);
 
 put(vigil);
 
+}else if (random1 == 19)
+{
+
+put(sinpei);
+
 }  
 }
 
@@ -274,8 +292,37 @@ document.body.innerHTML += str +  "<br>";
 
 function omake()
 {
+var random2 = Math.ceil( Math.random()*5);
+syoumei += 1;
+put("---証明---");
+put("ボタンを押した回数は" + syoumei + "です。");
+if(random2 == 1)
+{
 
-put("攻撃・防衛：新兵(地味に最強！除外注意！)")
+put(jogai1);
+
+}else if(random2 == 2)
+{
+
+put(jogai2);
+
+}else if(random2 == 3)
+{
+
+put(jogai3);
+
+}else if(random2 == 4)
+{
+
+put(jogai4)
+
+}else if(random2 == 5)
+{
+
+put(jogai5);
+
+}
+
 
 }
 
