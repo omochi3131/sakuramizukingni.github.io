@@ -59,8 +59,7 @@ function random()
 
 put("レインボーシックスシージ");
 put("ランダムオペレーター出力<br>");
-put("オペレーター選択で迷ったら使ってください。");
-  
+
 put("攻撃を選択：赤　防衛を選択：緑<br>");
 
 put("(!!新シーズン対応!!)");
@@ -172,6 +171,34 @@ put(sinpei);
 
 
 }
+
+
+
+
+function sarashi()
+{
+
+put("<br>迷惑プレイヤーを報告または晒せます。")
+put("もし報告して何があっても一切の責任は負いません。")
+put("それを同意した上で利用してください。<br>")
+//    if( window.confirm( "晒して何があっても私たちは責任を負いません" )){
+ //       document.myForm.submit();
+ //   }else{
+
+      //  location.reload();
+
+    //}
+var sarashi1 = prompt('晒し・報告したいプレイヤーのID');
+
+
+    put("---証明---");
+    put(sarashi1 + ("を晒し・報告しました"));
+    put("自己責任でお願いします。");
+    put("----------<br>");
+}
+
+
+
 function bouei()
 {
 document.body.style.color = ("green");
@@ -295,9 +322,9 @@ function omake()
 {
 var random2 = Math.ceil( Math.random()*5);
 syoumei += 1;
-put("---証明---");
-put("ボタンを押した回数は" + syoumei + "です。");
-if(random2 == 1)
+put("<警告>");
+put("除外ボタンは廃止されました。");
+/*if(random2 == 1)
 {
 
 put(jogai1);
@@ -323,15 +350,15 @@ put(jogai4)
 put(jogai5);
 
 }
-
+*/
 
 }
-
 function webcolor()
 {
+document.body.style.fontFamily = "ＭＳ 明朝";
 document.body.style.color ="skyblue";
 document.body.style.background = "gray";
-document.body.style.fontSize = 200 + '%';
+document.body.style.fontSize = 160 + '%';
 }
 
 
